@@ -1,0 +1,71 @@
+{
+  "properties":{
+    "content": {
+      "type":"text",
+      "analyzer":"stemmed_no_stop",
+      "search_analyzer": "stemmed",
+      "search_quote_analyzer": "stemmed_no_stop"
+    },
+    "title":{
+      "type":"text",
+      "analyzer":"stemmed_no_stop",
+      "search_analyzer": "stemmed",
+      "search_quote_analyzer": "stemmed_no_stop",
+      "boost":3
+    },
+    "heading1": {
+      "type":"text",
+      "analyzer":"stemmed_no_stop",
+      "search_analyzer": "stemmed",
+      "search_quote_analyzer": "stemmed_no_stop",
+      "boost":2
+    },
+    "heading2": {
+      "type":"text",
+      "analyzer":"stemmed_no_stop",
+      "search_analyzer": "stemmed",
+      "search_quote_analyzer": "stemmed_no_stop",
+      "boost":1.5
+    },
+    "keywords":{
+      "type":"text",
+      "analyzer":"stemmed_no_stop",
+      "search_analyzer": "stemmed",
+      "search_quote_analyzer": "stemmed_no_stop",
+      "boost":1.5
+    },
+    "contents": {
+      "type": "text",
+      "analyzer": "stemmed_no_stop",
+      "search_analyzer": "stemmed",
+      "search_quote_analyzer": "stemmed_no_stop"
+    },
+    "ticket": {
+      "type": "text",
+      "index": true,
+      "store": true,
+      "analyzer":"simple_lc"
+    },
+    "filename":{
+      "type":"text",
+      "analyzer":"stemmed_no_stop",
+      "search_analyzer": "stemmed",
+      "search_quote_analyzer": "stemmed_no_stop"
+    },
+    "fullpath": {
+      "type": "keyword",
+      "store": true,
+      "index": false
+    },
+    "question":{
+      "type":"text",
+      "analyzer":"stemmed_no_stop",
+      "search_analyzer": "stemmed",
+      "search_quote_analyzer": "stemmed_no_stop"
+    },
+    "k":{
+      "type":"keyword",
+      "store":true
+    }
+  }
+}

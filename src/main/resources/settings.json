@@ -1,0 +1,38 @@
+{
+  "settings": {
+    "analysis": {
+      "analyzer": {
+        "stemmed": {
+          "type": "custom",
+          "tokenizer": "lowercase",
+          "filter": [
+            "english_stop",
+            "kstem"
+          ]
+        },
+        "stemmed_no_stop": {
+          "type": "custom",
+          "tokenizer": "lowercase",
+          "filter": "kstem"
+        },
+        "simple_lc": {
+          "type": "custom",
+          "tokenizer": "keyword",
+          "filter": "lowercase"
+        }
+      },
+      "tokenizer": {
+        "simple_ws_tokenizer": {
+          "type": "simple_pattern",
+          "pattern": "\\s+"
+        }
+      },
+      "filter": {
+        "english_stop": {
+          "type": "stop",
+          "stopwords": "_english_"
+        }
+      }
+    }
+  }
+}
